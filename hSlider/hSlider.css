@@ -1,0 +1,89 @@
+.hSlider {
+  position: relative;
+  -moz-user-select: none; 
+  -khtml-user-select: none; 
+  -webkit-user-select: none; 
+  -o-user-select: none; 
+}
+.hSlider .hSlider_top {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.hSlider .hSlider_top ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hSlider .hSlider_top ul > li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.hSlider .hSlider_bottom {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  overflow-x: hidden;
+}
+.hSlider .hSlider_bottom ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hSlider .hSlider_bottom ul > li {
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.hSlider .hSlider_scroll {
+  position: relative;
+  margin: 0 0;
+  padding: 0 30px;
+  height: 21px;
+  background: transparent url('images/scroll_bg.png') repeat scroll 0 0;
+}
+.hSlider .hSlider_scroll ul.ticks {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+.hSlider .hSlider_scroll ul.ticks li.tick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+  background: transparent url('images/scroll_tick.png') no-repeat scroll 0 0;
+  height: 21px;
+  width: 13px;
+}
+.hSlider .hSlider_scroll .hSlider_handle {
+  background: transparent url('images/scroll_handle.png') no-repeat 0 0;
+  cursor: move;
+  position: absolute;
+  width: 59px;
+  height: 21px;
+  top: 0;
+  left: 0;
+}
+.hSlider .clearfix {
+  *zoom:1;
+}
+.hSlider .clearfix:before,
+.hSlider .clearfix:after {
+  display: table;
+  content: "";
+}
+.hSlider .clearfix:after {
+  clear: both;
+}
