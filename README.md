@@ -1,6 +1,6 @@
-# jQuery Horizontal Slider 1.0
+# jQuery Horizontal Slider 1.1
 
-This repository contains the source code for jQuery Horizontal Slider 1.0
+This repository contains the source code for jQuery Horizontal Slider 1.1
 
 ## Usage
 
@@ -25,18 +25,24 @@ Need to have two lists as follows:
 To initialize:
 
 	$("#mydiv").hSlider({
- 	 "ticks": [0, 10, 33.33, 50, 66.66, 100]                // Intervals
+ 	  "ticks": [0, 10, 33.33, 50, 66.66, 100]               // Intervals in percent
+ 	});
+ 	$("#mydiv").hSlider({
+ 	  "ticks": "all"                                        // Shows all Intervals
  	});
 
 To manually move the slider
 
-	 $("#mydiv").hSlider('manual_move', 75, true)   // need percent and/or animation
-                               percent -^     ^- animation
+	 $("#mydiv").hSlider('move_manual', 75, true)            // Manually slide to percent with animation
+	                           percent -^     ^- animation
+	 
+	 $("#mydiv").hSlider('move_index', 5, true)            // Manually slide to element index with animation
+	                            index -^    ^- animation
 
 
 # Legal
 
-jQuery Horizontal Slider 1.0
+jQuery Horizontal Slider 1.1
 
 http://www.parvez.me/
 
