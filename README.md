@@ -2,6 +2,9 @@
 
 This repository contains the source code for jQuery Horizontal Slider 1.1
 
+Demo: <a href="http://www.parvez.me">http://www.parvez.me</a>
+
+
 ## Usage
 
 Need to have two lists as follows:
