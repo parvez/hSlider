@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Hslider : Awesome Timeline Slider" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Hslider</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/parvez/hSlider">View on GitHub</a>
+
+          <h1 id="project_title">Hslider</h1>
+          <h2 id="project_tagline">Awesome Timeline Slider</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/parvez/hSlider/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/parvez/hSlider/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>jQuery Horizontal Slider 1.1</h1>
+
+<p>This repository contains the source code for jQuery Horizontal Slider 1.1</p>
+
+<p>Demo: <a href="http://www.parvez.me"></a><a href="http://www.parvez.me">http://www.parvez.me</a></p>
+
+<h2>Usage</h2>
+
+<p>Need to have two lists as follows:</p>
+
+<pre><code>&lt;div id="mydiv"&gt;
+  &lt;ul&gt;
+    &lt;li style="background-color:pink;"&gt;Panel 1&lt;/li&gt;       // large Top Panels
+    &lt;li style="background-color:green;"&gt;Panel 2&lt;/li&gt;
+    &lt;li style="background-color:yellow;"&gt;Panel 3&lt;/li&gt;
+    &lt;li style="background-color:pink;"&gt;Panel 4&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;ul&gt;
+    &lt;li style="background-color:pink;"&gt;Thumb Panel 1&lt;/li&gt;       // Small Bottom Panels
+    &lt;li style="background-color:green;"&gt;Thumb Panel 2&lt;/li&gt;
+    &lt;li style="background-color:yellow;"&gt;Thumb Panel 3&lt;/li&gt;
+    &lt;li style="background-color:pink;"&gt;Thumb Panel 4&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>To initialize:</p>
+
+<pre><code>$("#mydiv").hSlider({
+  "ticks": [0, 10, 33.33, 50, 66.66, 100]               // Intervals in percent
+});
+$("#mydiv").hSlider({
+  "ticks": "all"                                        // Shows all Intervals
+});
+</code></pre>
+
+<p>To manually move the slider</p>
+
+<pre><code> $("#mydiv").hSlider('move_manual', 75, true)            // Manually slide to percent with animation
+                           percent -^     ^- animation
+
+ $("#mydiv").hSlider('move_index', 5, true)            // Manually slide to element index with animation
+                            index -^    ^- animation
+</code></pre>
+
+<h1>Legal</h1>
+
+<p>jQuery Horizontal Slider 1.1</p>
+
+<p><a href="http://www.parvez.me/">http://www.parvez.me/</a></p>
+
+<p>Copyright 2012, Parvez Husain
+Licensed under the MIT License (<a href="http://opensource.org/licenses/MIT">http://opensource.org/licenses/MIT</a>)</p>
+
+<p>Date: Feb 13 2013</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Hslider maintained by <a href="https://github.com/parvez">parvez</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
